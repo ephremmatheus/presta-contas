@@ -28,14 +28,14 @@ export const Nav = () => {
     window.onload = function(){
         showButton()
     }
-    
+
     window.addEventListener('resize', showButton);
 
     return (
         <nav className="navbar">
             <div className="navbar-container">
                 <div className="navbar-logo">
-                    <Link to="/">teste</Link>
+                    <Link to="/" onClick={closeMobileMenu}>teste</Link>
                 </div>
                 <div className="menu-icon" onClick={handleClick}>
                     <span className={"material-symbols-outlined"} >
