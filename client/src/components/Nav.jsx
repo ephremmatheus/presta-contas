@@ -35,7 +35,7 @@ export const Nav = () => {
         <nav className="navbar">
             <div className="navbar-container">
                 <div className="navbar-logo">
-                    <Link to="/" onClick={closeMobileMenu}>teste</Link>
+                    <Link to="/" onClick={closeMobileMenu}>ContaClara</Link>
                 </div>
                 <div className="menu-icon" onClick={handleClick}>
                     <span className={"material-symbols-outlined"} >
@@ -62,7 +62,10 @@ export const Nav = () => {
                         <Link to="/" onClick={closeMobileMenu} className="nav-links-mobile-cadastrar">Cadastre-se</Link>
                     </li>
                 </ul>
-                {button && <Button buttonStyle='btn--outline'>CADASTRE-SE</Button>}
+                <div className="nav-login">
+                    {button && <Button buttonStyle='btn--outline' className="btn-login">Login</Button>}
+                    {button && <Button buttonStyle='btn--outline'>CADASTRE-SE</Button>}
+                </div>
             </div>
         </nav>
     )

@@ -18,16 +18,27 @@
     height: 80px;
     width: 100%;
     max-width: 1300px;
-    padding: 0 24px;
+    padding: 0 0 0 24px;
   }
   
-  .navbar-logo {
+  .navbar-logo> a {
     color: #fff;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: border-color 0.4s ease;
+    border: 1px solid transparent;
+    border-radius: 10px;
+  }
+
+  .navbar-logo> a:hover{
+    border-color: white;
+    
   }
   
   .menu-icon {
@@ -42,13 +53,14 @@
     align-items: center;
     list-style: none;
     text-align: center;
+    margin-left: 50px;
   }
   
   .nav-item {
     height: 80px;
   }
   
-  .nav-links {
+  .nav-links, .btn-login{
     color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -57,9 +69,19 @@
     height: 100%;
     transition: all 0.3s ease;
   }
+
+  .nav-login{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 300px;
+    justify-content: space-around;
+  }
   
-  .nav-links:hover {
-    border-bottom: 2px solid #fff;
+  .nav-links:hover, .btn-login:hover {
+    background-color: #fff;
+      color: #242424;
+    transition: all 0.3s ease;
   }
   
   .nav-links-mobile,
@@ -70,6 +92,10 @@
   /* Estilo para os botões */
   .btn {
     margin-left: 10px;
+  }
+
+  a.btn-mobile> button{
+    margin: 0px;
   }
   
   @media screen and (max-width: 960px) {
@@ -93,6 +119,11 @@
       opacity: 0;
       transition: all 0.5s ease;
       background: #242424;
+      margin-left: 0px;
+    }
+
+    .nav-login{
+      display: none;
     }
   
     .nav-menu.active {
