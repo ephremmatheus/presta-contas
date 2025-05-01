@@ -25,9 +25,15 @@
     
 }
 
-.hero-center >h1, .hero-center>p{
+
+.hero-titles{
     color: white;
     transition: all 0.3s ease;
+}
+
+.hero-titles>p{
+    font-style: italic;
+    text-align: center;
 }
 
 .hero-btns{
@@ -42,21 +48,30 @@
     }
 }
 
+
 @media screen and (max-width: 650px){
-    .hero-center >h1 {
-        font-size: 1.7rem;
-        transition: all 0.3s ease;
-    }
-
-}
-
-@media screen and (max-width: 480px){
     .hero-center {
+        padding: 20px;
         display: flex;
-        flex-direction:row;
-        
+        flex-direction:row;    
         flex-wrap: wrap;
-        align-items: start;
     }
+
+    .hero-titles>h1{
+        font-size: 2.5rem;
+    }
+
+    .hero-titles> p{
+        margin-top: 10px;
+        font-size: 1.2rem;
+        text-align: start;
+        
+    }
+
+    .hero-titles>h1, p{
+        text-shadow: 0 4px 14px rgba(0, 0, 0, 0.473);
+    }
+
+    
 
 }

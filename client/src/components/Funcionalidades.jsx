@@ -13,7 +13,7 @@ export const Funcionalidades = () =>{
                     <p className="card-sobre">Registre e organize as prestações de contas de cada mês com histórico acessível.</p>
                     <div className="button-container">
                         <Link to='/' className="
-                        card-button">Ver Demonstração</Link>
+                        card-button">Saiba Mais</Link>
                     </div>
                 </div>
 
@@ -24,7 +24,7 @@ export const Funcionalidades = () =>{
                     </p>
                     <div className="button-container">
                         <Link to='/' className="
-                        card-button">Ver Demonstração</Link>
+                        card-button">Saiba Mais</Link>
                     </div>
                     
                 </div>
@@ -35,7 +35,7 @@ export const Funcionalidades = () =>{
                     <p className="card-sobre">Exporte documentos mensais com um clique e facilite assembleias e auditorias.</p>
                     <div className="button-container">
                         <Link to='/' className="
-                        card-button">Ver Demonstração</Link>
+                        card-button">Saiba Mais</Link>
                     </div>
 
                 </div>
@@ -46,7 +46,7 @@ export const Funcionalidades = () =>{
                     <p className="card-sobre">Categorize cada despesa e saiba exatamente onde o dinheiro está sendo usado.</p>
                     <div className="button-container">
                         <Link to='/' className="
-                        card-button">Ver Demonstração</Link>
+                        card-button">Saiba Mais</Link>
                     </div>
                 </div>
                 <div className="card acesso-seguro">
@@ -55,7 +55,7 @@ export const Funcionalidades = () =>{
                     <p className="card-sobre">Controle de permissões para síndico e moradores.</p>
                     <div className="button-container">
                         <Link to='/' className="
-                        card-button">Ver Demonstração</Link>
+                        card-button">Saiba Mais</Link>
                     </div>
                 </div>
 
