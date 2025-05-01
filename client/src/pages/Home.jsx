@@ -1,3 +1,4 @@
+import { Demonstraçao } from "../components/Demonstraçao"
 import { Funcionalidades } from "../components/Funcionalidades"
 import { HeroSection } from "../components/HeroSection"
 import { Nav } from "../components/nav"
