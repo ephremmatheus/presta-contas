@@ -1,4 +1,4 @@
-import { Demonstraçao } from "../components/Demonstraçao"
+import { ComoFunciona } from "../components/ComoFunciona"
 import { Funcionalidades } from "../components/Funcionalidades"
 import { HeroSection } from "../components/HeroSection"
 import { Nav } from "../components/nav"
@@ -9,6 +9,7 @@ export const Home = () => {
             <Nav />
             <HeroSection />
             <Funcionalidades />
+            <ComoFunciona />
         </>
         
         
