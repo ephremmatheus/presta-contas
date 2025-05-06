@@ -1,8 +1,8 @@
 import './Demonstraçao.css';
 
-export const Demonstraçao = () =>{
+export const Demonstraçao = (props) =>{
     return(
-        <div className="demo-container">
+        <div className="demo-container" ref={props.demoRef}>
             <h3>Demonstração</h3>
             <div className="demo-center">
                 <div className="demo">

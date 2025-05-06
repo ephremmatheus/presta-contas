@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import './Nav.css';
 
-/*assim q carregar verifica tamanho e poe */
-export const Nav = () => {
+
+export const Nav = (props) => {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
@@ -35,7 +35,10 @@ export const Nav = () => {
         <nav className="navbar">
             <div className="navbar-container">
                 <div className="navbar-logo">
-                    <Link to="/" onClick={closeMobileMenu}>ContaClara</Link>
+                    <Link to="/" onClick={() =>{
+                        closeMobileMenu();
+                        props.homeScroll();
+                    } }>ContaClara</Link>
                 </div>
                 <div className="menu-icon" onClick={handleClick}>
                     <span className={"material-symbols-outlined"} >
@@ -44,13 +47,26 @@ export const Nav = () => {
                 </div>
                 <ul className={click? "nav-menu active" : "nav-menu"}>
                     <li className="nav-item">
-                        <Link to="/" onClick={closeMobileMenu} className="nav-links">Home</Link>
+                        <Link
+                        onClick={ () => {
+                            
+                            props.homeScroll();
+                            closeMobileMenu();
+                        }} className="nav-links">Início</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" onClick={closeMobileMenu} className="nav-links">Funcionalidades</Link>
+                        <Link to="/"
+                         onClick={ () =>{
+                            props.funcionalidadesScroll();
+                            closeMobileMenu();
+                         }
+                        } className="nav-links">Funcionalidades</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" onClick={closeMobileMenu} className="nav-links">Demostração</Link>
+                        <Link to="/" onClick={() =>{
+                            props.demoScroll();
+                            closeMobileMenu();
+                         }} className="nav-links">Demostração</Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/" onClick={closeMobileMenu} className="nav-links">Contato</Link>

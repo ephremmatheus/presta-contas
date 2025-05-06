@@ -1,8 +1,8 @@
 import './ComoFunciona.css';
 
-export const ComoFunciona = () => {
+export const ComoFunciona = (props) => {
     return(
-        <div className="cf-container">
+        <div className="cf-container" ref={props.comoFuncionaRef}>
             <div className="cf-text">
                 <h2>Como Funciona</h2>
                 <p>Em poucos passos, você organiza, salva e compartilha as finanças do seu condomínio.</p>

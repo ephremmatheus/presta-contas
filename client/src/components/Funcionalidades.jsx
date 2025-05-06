@@ -1,10 +1,10 @@
 import "./Funcionalidades.css";
 import { Link } from "react-router-dom";
 
-export const Funcionalidades = () =>{
+export const Funcionalidades = (props) =>{
     return(
         
-        <div className="funcionalidades">
+        <div className="funcionalidades" ref={props.funcionalidadesRef}>
             <h2 className="funcionalidade-titulo">Funcionalidades</h2>
             <div className="funcionalidades-container">
                 <div className="card armazenamento-mensal">
@@ -52,7 +52,7 @@ export const Funcionalidades = () =>{
                 <div className="card acesso-seguro">
                     <img src="../../public/images/lock.png" alt="Cadeado/Segurança" />
                     <h3 className="card-titulo">Acesso Seguro</h3>
-                    <p className="card-sobre">Controle de permissões para síndico e moradores.</p>
+                    <p className="card-sobre">Controle de permissões para síndico e condôminos.</p>
                     <div className="button-container">
                         <Link to='/' className="
                         card-button">Saiba Mais</Link>
