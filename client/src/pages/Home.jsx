@@ -5,12 +5,14 @@ import { HeroSection } from "../components/HeroSection"
 import { Nav } from "../components/Nav"
 import { Demonstraçao } from "../components/Demonstraçao"
 import { Depoimentos } from "../components/Depoimentos"
+import { Footer } from "../components/Footer"
 
 export const Home = () => {
     const homeRef = useRef(null);  
     const funcionalidadesRef = useRef(null);
     const comoFuncionaRef = useRef(null);
     const demoRef = useRef(null);
+    const contatosRef = useRef(null);
     
     const scrollToHome = () => {
         homeRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -28,16 +30,23 @@ export const Home = () => {
     const scrollToDemo = () => {
         demoRef.current?.scrollIntoView({ behavior: 'smooth' });
     }
+
+    const scrollToContatos = () => {
+        contatosRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
     
 
     return(
         <>
-            <Nav homeScroll = {scrollToHome} funcionalidadesScroll={scrollToFuncionalidades} demoScroll = {scrollToDemo}/>
+            <Nav homeScroll = {scrollToHome} funcionalidadesScroll={scrollToFuncionalidades} demoScroll = {scrollToDemo}
+            contatosScroll = {scrollToContatos}
+            />
             <HeroSection homeRef = {homeRef} comoFuncionaScroll={scrollToComoFunciona}/>
             <Funcionalidades funcionalidadesRef={funcionalidadesRef}/>
             <ComoFunciona comoFuncionaRef={comoFuncionaRef} />
             <Demonstraçao demoRef = {demoRef} />
             <Depoimentos />
+            <Footer contatosRef ={contatosRef} />
         </>
         
         

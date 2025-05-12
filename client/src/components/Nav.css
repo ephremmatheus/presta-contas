@@ -68,7 +68,10 @@
     align-items: center;
     height: 100%;
     transition: all 0.3s ease;
+    margin: 0px;
   }
+
+  
 
   .nav-login{
     display: flex;
