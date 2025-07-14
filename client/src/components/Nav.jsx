@@ -76,10 +76,10 @@ export const Nav = (props) => {
                         }className="nav-links">Contato</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" onClick={closeMobileMenu} className="nav-links-mobile">Login</Link>
+                        <Link to="/login" onClick={closeMobileMenu} className="nav-links-mobile">Login</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" onClick={closeMobileMenu} className="nav-links-mobile-cadastrar">Cadastre-se</Link>
+                        <Link to="/login" onClick={closeMobileMenu} className="nav-links-mobile-cadastrar">Cadastre-se</Link>
                     </li>
                 </ul>
                 <div className="nav-login">
