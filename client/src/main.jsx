@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.jsx'
 import { Home } from './pages/Home.jsx'
 import Login from './pages/Login.jsx'
+import Prestacao from './pages/Prestacao.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -12,6 +13,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/' element={ <Home/> }></Route>
         <Route path='/login' element={<Login />}></Route>
+        <Route path='/prestacao' element={<Prestacao />}></Route>
       </Routes>
     </BrowserRouter>
   </StrictMode>,
