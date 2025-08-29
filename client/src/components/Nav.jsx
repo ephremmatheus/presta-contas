@@ -79,12 +79,12 @@ export const Nav = (props) => {
                         <Link to="/login" onClick={closeMobileMenu} className="nav-links-mobile">Login</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/login" onClick={closeMobileMenu} className="nav-links-mobile-cadastrar">Cadastre-se</Link>
+                        <Link to="/cadastro" onClick={closeMobileMenu} className="nav-links-mobile-cadastrar">Cadastre-se</Link>
                     </li>
                 </ul>
                 <div className="nav-login">
-                    {button && <Button buttonStyle='btn--outline' className="btn-login">Login</Button>}
-                    {button && <Button buttonStyle='btn--outline'>CADASTRE-SE</Button>}
+                    {button && <Button buttonStyle='btn--outline' className="btn-login" tipo = "login">Login</Button>}
+                    {button && <Button buttonStyle='btn--outline' tipo = "cadastro">CADASTRE-SE</Button>}
                 </div>
             </div>
         </nav>

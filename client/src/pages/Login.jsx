@@ -17,7 +17,7 @@ export default function Login(){
             <div className="login-cadastro">
                 <div className="cadastro-section">
                     <h2 className="cadastro-section-titulo">Cadastre-se</h2>
-                    <form action="" method="post">
+                    <form action="http://localhost:3000/register" method="post">
 
                         <label htmlFor="emailCadastroId">
                             <p>E-MAIL</p>
@@ -27,12 +27,18 @@ export default function Login(){
                             <p>SENHA</p>    
                             <input type="password" name="password" id="passwordCadastroId"/>
                         </label>
+                        <div className="role">
+                            <input type="radio" name="role" id="viewerId" value='viewer' checked required/>
+                            <label htmlFor="viewerId">Condômino</label>
+                            <input type="radio" name="role" id="sindicoId" value='sindico' required/>
+                            <label htmlFor="sindicoId">Síndico</label>
+                        </div>
                         <button className="button-login-cadastro" type="submit">CRIAR</button>
                     </form>
                 </div>
                 <div className="login-section">
                     <h2 className="login-section-titulo">Entrar</h2>
-                    <form action="" method="post">
+                    <form action="http://localhost:3000/login" method="post">
 
                         <label htmlFor="emailLoginId">
                             <p>E-MAIL</p>

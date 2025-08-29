@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import './NavSistema.css';
 
@@ -8,9 +9,19 @@ export default function NavSistema(){
         setAberto(!aberto);
     }
 
+    function entrou(){
+        setAberto(true);
+    }
+
+    function saiu(){
+        setAberto(false);
+    }
+
+    
+
     return (
-        <div id="navSistema" className={aberto ? 'open' : ''}>
-            <div className="navSistema-content">
+        <div id="navSistema" className={aberto ? 'open' : ''} onMouseEnter={entrou} onMouseLeave={saiu}>
+            <div className="navSistema-content" >
                 <div className="user">
                     <div className="img">
                         <img src="../../public/images/perfil.png" alt="Imagem de perfil" />
@@ -23,16 +34,22 @@ export default function NavSistema(){
            
                 <ul className='side-items'>
                     <li className='side-item'>
-                        <a href="/registros">
-                            <span className="material-symbols-outlined">folder</span>
-                        </a>
-                        <p className="item-description">Registros</p>
+                        <Link to="/home">
+                            <span className="material-symbols-outlined">home</span>
+                        </Link>
+                        <Link to='/home' className="item-description">Inicio</Link>
                     </li>
                     <li className='side-item'>
-                        <a href="/prestacao">
+                        <Link to="/registros">
+                            <span className="material-symbols-outlined">folder</span>
+                        </Link>
+                        <Link to='/registros' className="item-description">Registros</Link>
+                    </li>
+                    <li className='side-item'>
+                        <Link to="/prestacao">
                             <span className="material-symbols-outlined">assignment_add</span>
-                        </a>
-                        <p className="item-description"> Prestação</p>
+                        </Link>
+                        <Link to='/prestacao' className="item-description"> Prestação</Link>
                     </li>
                 </ul>
             

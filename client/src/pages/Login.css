@@ -95,6 +95,14 @@ border-color: white;
     height: 40px;
 }
 
+.role > input{
+    margin-left: 15px;
+}
+
+.role > label{
+    margin-left: 5px;
+}
+
 .button-login-cadastro{
     margin-top: 20px;
     width: 97%;
