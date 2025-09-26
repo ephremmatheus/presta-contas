@@ -16,7 +16,6 @@ export const Button = ({children,
 }) => {
     const checkButtonStyle = STYLES.includes(buttonStyle)? buttonStyle: STYLES[0];
     const checkButtonSize = SIZES.includes(buttonSize)? buttonSize: SIZES[0];
-    const checkTipo = tipo;
     return(
         <Link to={`/${tipo}`} className="btn-mobile">
             <button className={`btn ${checkButtonSize} ${checkButtonStyle}`}
